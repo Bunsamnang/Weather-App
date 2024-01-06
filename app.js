@@ -44,7 +44,7 @@ const getWeather = async (cityInput) => {
     console.log(data);
     cityName.innerHTML = data.name;
     mainWeather.innerHTML = data.weather[0].main;
-    temp.innerHTML = `Temperature: ${data.main.temp} °F or ${(
+    temp.innerHTML = `Temp: ${data.main.temp} °F or ${(
       ((data.main.temp - 32) * 5) /
       9
     ).toFixed(2)} C°`;
@@ -52,11 +52,11 @@ const getWeather = async (cityInput) => {
       ((data.main.feels_like - 32) * 5) /
       9
     ).toFixed(2)} C°`;
-    minTemp.innerHTML = `Min temperature: ${data.main.temp_min} °F or ${(
+    minTemp.innerHTML = `Min temp: ${data.main.temp_min} °F or ${(
       ((data.main.temp_min - 32) * 5) /
       9
     ).toFixed(2)} C°`;
-    maxTemp.innerHTML = `Max temperature: ${data.main.temp_max} °F or ${(
+    maxTemp.innerHTML = `Max temp: ${data.main.temp_max} °F or ${(
       ((data.main.temp_max - 32) * 5) /
       9
     ).toFixed(2)} C°`;
