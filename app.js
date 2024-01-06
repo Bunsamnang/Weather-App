@@ -24,7 +24,7 @@ searchBtn.addEventListener("click", () => {
   getWeather(cityInput.value);
   setTimeout(() => {
     cityInput.value = "";
-  }, 2000);
+  }, 3000);
 });
 
 function handleKeyDown() {
