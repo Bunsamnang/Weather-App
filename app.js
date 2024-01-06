@@ -22,11 +22,17 @@ cityInput.addEventListener("keydown", () => {
 
 searchBtn.addEventListener("click", () => {
   getWeather(cityInput.value);
+  setTimeout(() => {
+    cityInput.value = "";
+  }, 2000);
 });
 
 function handleKeyDown() {
   if (event.key === "Enter") {
     getWeather(cityInput.value);
+    setTimeout(() => {
+      cityInput.value = "";
+    }, 2000);
   }
 }
 
